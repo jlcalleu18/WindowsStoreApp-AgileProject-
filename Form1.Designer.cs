@@ -30,7 +30,7 @@ namespace Agile_Project
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,12 +48,12 @@ namespace Agile_Project
             this.label1.Text = "Login";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtUserName
+            // txtEmail
             // 
-            this.txtUserName.Location = new System.Drawing.Point(212, 362);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(319, 39);
-            this.txtUserName.TabIndex = 1;
+            this.txtEmail.Location = new System.Drawing.Point(212, 362);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(319, 39);
+            this.txtEmail.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -76,9 +76,9 @@ namespace Agile_Project
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(212, 327);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 32);
+            this.label3.Size = new System.Drawing.Size(71, 32);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Username";
+            this.label3.Text = "Email";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnLogin
@@ -109,7 +109,7 @@ namespace Agile_Project
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -121,7 +121,7 @@ namespace Agile_Project
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
