@@ -36,6 +36,7 @@ namespace Agile_Project
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -99,11 +100,22 @@ namespace Agile_Project
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(313, 146);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(78, 32);
+            this.test.TabIndex = 7;
+            this.test.Text = "label4";
+            this.test.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 864);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label3);
@@ -127,6 +139,7 @@ namespace Agile_Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label test;
     }
 }
 
