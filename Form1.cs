@@ -23,10 +23,15 @@ namespace Agile_Project
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+    //this is from Shisir
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
