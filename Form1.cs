@@ -30,5 +30,10 @@ namespace Agile_Project
         {
 
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
