@@ -123,6 +123,7 @@ namespace Agile_Project
             this.btnSignUp.TabIndex = 9;
             this.btnSignUp.Text = "Sign up";
             this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // Form2
             // 
