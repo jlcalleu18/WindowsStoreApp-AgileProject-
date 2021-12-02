@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 
 
@@ -17,7 +18,6 @@ namespace Agile_Project
         DataTable mydt = new DataTable();
         
         SqlConnection myconn;
-        SqlTransaction mytrans;
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -29,46 +29,49 @@ namespace Agile_Project
             //Establish a connection with the DBMS
 
             myconn = new SqlConnection();
-            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\Documents\\CST4708\\Fall2021-CST4708.mdf;Integrated Security=True;Connect Timeout=30";
-            myconn.Open();
+            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
             //MessageBox.Show("open DB");
             //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
 
 
-
+            System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,8}$");
             if (txtFirstName.Text.Length > 0 && txtLastName.Text.Length > 0 && txtEmail.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
-                mycommand.Parameters.Add("@firstName", SqlDbType.VarChar, 100);
-                mycommand.Parameters["@firstName"].Value = txtFirstName.Text;
+                if (!rEmail.IsMatch(txtEmail.Text.Trim()))
+                {
+                    MessageBox.Show("check email id");
+                    txtEmail.SelectAll();
+                }
+                else if (!rPassword.IsMatch(txtPassword.Text.Trim()))
+                {
+                    MessageBox.Show("password must contain 8 characters, one uppercase, one lowercase, one number");
+                }
+                else
+                {
+                    
+                    mycommand.Connection = myconn;
+                    mycommand.CommandText = "INSERT INTO Users (firstName, lastName, email, password) VALUES (@firstName, @lastName, @email, @password)";
+                    mycommand.Parameters.AddWithValue("@firstName", txtFirstName.Text);
+                    mycommand.Parameters.AddWithValue("@lastName", txtLastName.Text);
+                    mycommand.Parameters.AddWithValue("@email", txtEmail.Text);
+                    mycommand.Parameters.AddWithValue("@password", txtPassword.Text);
+                    myconn.Open();
+                    int i = mycommand.ExecuteNonQuery();
 
-                mycommand.Parameters.Add("@lastName", SqlDbType.VarChar, 100);
-                mycommand.Parameters["@lastName"].Value = txtLastName.Text;
+                    myconn.Close();
 
-                mycommand.Parameters.Add("@email", SqlDbType.VarChar, 100);
-                mycommand.Parameters["@email"].Value = txtEmail.Text;
-
-                mycommand.Parameters.Add("@password", SqlDbType.VarChar, 100);
-                mycommand.Parameters["@password"].Value = txtPassword.Text;
-
-                //mycommand.CommandText = "SELECT * FROM Users WHERE lastname>@lastname AND age>@age";
+                    if (i != 0)
+                    {
+                        MessageBox.Show(i + "Data Saved");
+                    }
+                }
             }
-
-
-            mycommand.CommandText = "SELECT * FROM students WITH (READUNCOMMITTED)"; // WITH (READUNCOMMITTED) or  WITH (READPAST)-> readcommited
-
-
-            mycommand.Connection = myconn;
-
-            //use dataadapter class to carry the command 
-            //to the DBMS and return the results 
-
-            SqlDataAdapter myadpter = new SqlDataAdapter();
-            mydt = new DataTable();
-            myadpter.SelectCommand = mycommand;
-            myadpter.Fill(mydt);
-
-            //binding
+            else
+            {
+                MessageBox.Show("fill the blanks");
+            }
        
         }
     }

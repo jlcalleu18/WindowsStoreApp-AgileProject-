@@ -104,6 +104,7 @@ namespace Agile_Project
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(341, 39);
             this.txtPassword.TabIndex = 7;
+            this.txtPassword.Tag = "";
             // 
             // label5
             // 
