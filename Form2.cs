@@ -29,14 +29,35 @@ namespace Agile_Project
             //Establish a connection with the DBMS
 
             myconn = new SqlConnection();
+            //Jorge Calle - Connection
             myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
-            //MessageBox.Show("open DB");
-            //Build a command object to hold the SQL statement 
+
+            //Kyle Schoenhardt - Connection
+            //myconn.ConnectionString = "";
+
+            //Leslie Montan - Connection
+            //myconn.ConnectionString = "";
+
+            //Jada Alvarez - Connection
+            //myconn.ConnectionString = "";
+
+            //Shisir Humagain - Connection
+            //myconn.ConnectionString = "";
+
+            //George Vanishvili - Connection
+            //myconn.ConnectionString = "";
+
+
+
+
             SqlCommand mycommand = new SqlCommand();
+
 
 
             System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
             System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,8}$");
+           
+            
             if (txtFirstName.Text.Length > 0 && txtLastName.Text.Length > 0 && txtEmail.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
                 if (!rEmail.IsMatch(txtEmail.Text.Trim()))
