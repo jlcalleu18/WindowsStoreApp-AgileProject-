@@ -19,24 +19,20 @@ namespace Agile_Project
         
         SqlConnection myconn;
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             //Establish a connection with the DBMS
 
             myconn = new SqlConnection();
-            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
+            //myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
+            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jadaa\\Documents\\Github\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
             //MessageBox.Show("open DB");
             //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
 
 
             System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
-            System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,8}$");
+            System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$");
             if (txtFirstName.Text.Length > 0 && txtLastName.Text.Length > 0 && txtEmail.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
                 if (!rEmail.IsMatch(txtEmail.Text.Trim()))
@@ -46,7 +42,7 @@ namespace Agile_Project
                 }
                 else if (!rPassword.IsMatch(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("password must contain 8 characters, one uppercase, one lowercase, one number");
+                    MessageBox.Show("password must contain 8-12 characters, one uppercase, one lowercase and one number");
                 }
                 else
                 {
@@ -64,7 +60,7 @@ namespace Agile_Project
 
                     if (i != 0)
                     {
-                        MessageBox.Show(i + "Data Saved");
+                        MessageBox.Show("Registered!");
                     }
                 }
             }
