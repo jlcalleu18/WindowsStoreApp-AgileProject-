@@ -19,9 +19,5 @@ namespace Agile_Project
             instance = this;
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
