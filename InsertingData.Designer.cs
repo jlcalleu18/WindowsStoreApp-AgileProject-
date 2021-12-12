@@ -44,6 +44,7 @@ namespace Agile_Project
             this.label6 = new System.Windows.Forms.Label();
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnChooseImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@ namespace Agile_Project
             this.btnAddData.TabIndex = 0;
             this.btnAddData.Text = "Add Data";
             this.btnAddData.UseVisualStyleBackColor = true;
+            this.btnAddData.Click += new System.EventHandler(this.btnAddData_Click);
             // 
             // txtProducts
             // 
@@ -158,6 +160,7 @@ namespace Agile_Project
             this.imageBox.Location = new System.Drawing.Point(673, 266);
             this.imageBox.Name = "imageBox";
             this.imageBox.Size = new System.Drawing.Size(509, 466);
+            this.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox.TabIndex = 14;
             this.imageBox.TabStop = false;
             // 
@@ -170,11 +173,22 @@ namespace Agile_Project
             this.label7.TabIndex = 15;
             this.label7.Text = "Image";
             // 
+            // btnChooseImage
+            // 
+            this.btnChooseImage.Location = new System.Drawing.Point(867, 747);
+            this.btnChooseImage.Name = "btnChooseImage";
+            this.btnChooseImage.Size = new System.Drawing.Size(150, 46);
+            this.btnChooseImage.TabIndex = 16;
+            this.btnChooseImage.Text = "Choose Image";
+            this.btnChooseImage.UseVisualStyleBackColor = true;
+            this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
+            // 
             // InsertingData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1218, 1048);
+            this.Controls.Add(this.btnChooseImage);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.imageBox);
             this.Controls.Add(this.label6);
@@ -215,5 +229,6 @@ namespace Agile_Project
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnChooseImage;
     }
 }

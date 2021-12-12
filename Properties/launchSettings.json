@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Agile-Project": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
