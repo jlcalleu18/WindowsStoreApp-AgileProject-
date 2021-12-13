@@ -16,5 +16,20 @@ namespace Agile_Project
         {
             InitializeComponent();
         }
+
+        private void checkout_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clear_Cart_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
