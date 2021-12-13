@@ -31,5 +31,10 @@ namespace Agile_Project
         {
 
         }
+
+        private void btn_clearCart_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cart has been Cleared!");
+        }
     }
 }

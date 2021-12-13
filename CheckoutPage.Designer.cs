@@ -34,7 +34,7 @@ namespace Agile_Project
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_checkout = new System.Windows.Forms.Button();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_creditcard = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@ namespace Agile_Project
             this.lbl_shippingcost_data = new System.Windows.Forms.Label();
             this.lbl_name_data = new System.Windows.Forms.Label();
             this.lbl_creditcard_data = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_clearCart = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,7 +54,7 @@ namespace Agile_Project
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.splitContainer1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_clearCart);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -81,7 +81,7 @@ namespace Agile_Project
             this.panel3.Controls.Add(this.lbl_total);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lbl_creditcard);
             this.panel3.Controls.Add(this.lbl_name);
             this.panel3.Controls.Add(this.btn_checkout);
             this.panel3.Location = new System.Drawing.Point(3, 735);
@@ -109,15 +109,15 @@ namespace Agile_Project
             this.lbl_name.TabIndex = 1;
             this.lbl_name.Text = "Name :";
             // 
-            // label1
+            // lbl_creditcard
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(58, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Credit Card :";
+            this.lbl_creditcard.AutoSize = true;
+            this.lbl_creditcard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_creditcard.Location = new System.Drawing.Point(58, 83);
+            this.lbl_creditcard.Name = "lbl_creditcard";
+            this.lbl_creditcard.Size = new System.Drawing.Size(146, 32);
+            this.lbl_creditcard.TabIndex = 2;
+            this.lbl_creditcard.Text = "Credit Card :";
             // 
             // label2
             // 
@@ -186,14 +186,15 @@ namespace Agile_Project
             this.lbl_creditcard_data.Size = new System.Drawing.Size(0, 32);
             this.lbl_creditcard_data.TabIndex = 9;
             // 
-            // button1
+            // btn_clearCart
             // 
-            this.button1.Location = new System.Drawing.Point(551, 683);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Clear Cart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_clearCart.Location = new System.Drawing.Point(551, 683);
+            this.btn_clearCart.Name = "btn_clearCart";
+            this.btn_clearCart.Size = new System.Drawing.Size(150, 46);
+            this.btn_clearCart.TabIndex = 2;
+            this.btn_clearCart.Text = "Clear Cart";
+            this.btn_clearCart.UseVisualStyleBackColor = true;
+            this.btn_clearCart.Click += new System.EventHandler(this.btn_clearCart_Click);
             // 
             // splitContainer1
             // 
@@ -232,11 +233,11 @@ namespace Agile_Project
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_creditcard;
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Button btn_checkout;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_clearCart;
     }
 }
