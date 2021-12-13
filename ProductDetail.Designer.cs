@@ -40,6 +40,7 @@ namespace Agile_Project
             this.label2 = new System.Windows.Forms.Label();
             this.lblBrand = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.TextBox();
+            this.btnAddToCart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,11 +144,22 @@ namespace Agile_Project
             this.lblDescription.Size = new System.Drawing.Size(524, 382);
             this.lblDescription.TabIndex = 13;
             // 
+            // btnAddToCart
+            // 
+            this.btnAddToCart.Location = new System.Drawing.Point(839, 1074);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(150, 46);
+            this.btnAddToCart.TabIndex = 14;
+            this.btnAddToCart.Text = "Add to Cart";
+            this.btnAddToCart.UseVisualStyleBackColor = true;
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
+            // 
             // ProductDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1748, 1132);
+            this.ClientSize = new System.Drawing.Size(1746, 1188);
+            this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblBrand);
@@ -179,5 +191,6 @@ namespace Agile_Project
         public System.Windows.Forms.Label lblPrice;
         public System.Windows.Forms.Label lblBrand;
         public System.Windows.Forms.TextBox lblDescription;
+        private System.Windows.Forms.Button btnAddToCart;
     }
 }

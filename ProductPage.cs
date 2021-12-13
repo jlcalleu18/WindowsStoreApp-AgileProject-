@@ -24,8 +24,8 @@ namespace Agile_Project
 
 
         DataTable mydt = new DataTable();
-
         SqlConnection con;
+
         public void loadData()
         {
             con = new SqlConnection();
