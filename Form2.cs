@@ -19,37 +19,14 @@ namespace Agile_Project
         
         SqlConnection myconn;
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             //Establish a connection with the DBMS
 
             myconn = new SqlConnection();
-            //Jorge Calle - Connection
             myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
-
-            //Kyle Schoenhardt - Connection
-            //myconn.ConnectionString = "";
-
-            //Leslie Montan - Connection
-            //myconn.ConnectionString = "";
-
-            //Jada Alvarez - Connection
-            //myconn.ConnectionString = "";
-
-            //Shisir Humagain - Connection
-            //myconn.ConnectionString = "";
-
-            //George Vanishvili - Connection
-            //myconn.ConnectionString = "";
-
-
-
-
+            //MessageBox.Show("open DB");
+            //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
 
 
@@ -67,7 +44,7 @@ namespace Agile_Project
                 }
                 else if (!rPassword.IsMatch(txtPassword.Text.Trim()))
                 {
-                    MessageBox.Show("password must contain 8 characters, one uppercase, one lowercase, one number");
+                    MessageBox.Show("password must contain 8-12 characters, one uppercase, one lowercase and one number");
                 }
                 else
                 {
@@ -85,7 +62,7 @@ namespace Agile_Project
 
                     if (i != 0)
                     {
-                        MessageBox.Show(i + "Data Saved");
+                        MessageBox.Show("Registered!");
                     }
                 }
             }

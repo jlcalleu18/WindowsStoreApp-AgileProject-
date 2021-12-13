@@ -114,7 +114,6 @@ namespace Agile_Project
             this.label5.Size = new System.Drawing.Size(111, 32);
             this.label5.TabIndex = 8;
             this.label5.Text = "Password";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnSignUp
             // 
