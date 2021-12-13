@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-//using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -37,7 +36,7 @@ namespace Agile_Project
             //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
 
-            mycommand.CommandText = "SELECT ProductName, Price, Image FROM Product ";
+            mycommand.CommandText = "SELECT * FROM Product ";
 
 
             mycommand.Connection = con;
@@ -57,14 +56,36 @@ namespace Agile_Project
 
 
         }
-/*        public Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            using (MemoryStream ms = new MemoryStream(byteArrayIn))
-            {
-                return Image.FromStream(ms);
-            }
-        }*/
 
+        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProductDetail pDetail = new ProductDetail();
+
+            pDetail.pictureBox1.Image = ConvertByteArrayToImage((byte[])dataGridView.CurrentRow.Cells[0].Value);
+            pDetail.lblName.Text = this.dataGridView.CurrentRow.Cells[1].Value.ToString();
+            pDetail.lblPrice.Text = this.dataGridView.CurrentRow.Cells[2].Value.ToString();
+            pDetail.lblBrand.Text = this.dataGridView.CurrentRow.Cells[4].Value.ToString();
+            pDetail.lblModel.Text = this.dataGridView.CurrentRow.Cells[5].Value.ToString();
+            pDetail.lblType.Text = this.dataGridView.CurrentRow.Cells[6].Value.ToString();
+            pDetail.lblDescription.Text = this.dataGridView.CurrentRow.Cells[7].Value.ToString();
+            pDetail.ShowDialog();
+        }
+        private static Image ConvertByteArrayToImage(byte[] byteArrayToConvert)
+        {
+            Image ret;
+
+            try
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    ms.Write(byteArrayToConvert, 0, byteArrayToConvert.Length);
+                    ret = new Bitmap(ms);
+                }
+            }
+            catch (Exception) { throw; }
+
+            return ret;
+        }
     }
  
 }
