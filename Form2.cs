@@ -24,8 +24,8 @@ namespace Agile_Project
             //Establish a connection with the DBMS
 
             myconn = new SqlConnection();
-            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
-            //myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jadaa\\Documents\\Github\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
+            //myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
+            myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jadaa\\Documents\\Github\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
             //MessageBox.Show("open DB");
             //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
