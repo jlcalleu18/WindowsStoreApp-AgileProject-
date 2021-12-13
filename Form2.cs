@@ -25,16 +25,14 @@ namespace Agile_Project
 
             myconn = new SqlConnection();
             myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
+            //myconn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jadaa\\Documents\\Github\\Agile-Project\\data\\DB-Users.mdf;Integrated Security=True";
             //MessageBox.Show("open DB");
             //Build a command object to hold the SQL statement 
             SqlCommand mycommand = new SqlCommand();
 
 
-
             System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
-            System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$");
-           
-            
+            System.Text.RegularExpressions.Regex rPassword = new System.Text.RegularExpressions.Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$");
             if (txtFirstName.Text.Length > 0 && txtLastName.Text.Length > 0 && txtEmail.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
                 if (!rEmail.IsMatch(txtEmail.Text.Trim()))
@@ -48,7 +46,7 @@ namespace Agile_Project
                 }
                 else
                 {
-                    
+
                     mycommand.Connection = myconn;
                     mycommand.CommandText = "INSERT INTO Users (firstName, lastName, email, password) VALUES (@firstName, @lastName, @email, @password)";
                     mycommand.Parameters.AddWithValue("@firstName", txtFirstName.Text);
@@ -70,7 +68,7 @@ namespace Agile_Project
             {
                 MessageBox.Show("fill the blanks");
             }
-       
+
         }
     }
 }

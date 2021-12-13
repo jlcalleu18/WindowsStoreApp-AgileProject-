@@ -26,5 +26,10 @@ namespace Agile_Project
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
