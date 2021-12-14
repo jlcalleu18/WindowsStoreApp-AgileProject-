@@ -29,136 +29,162 @@ namespace Agile_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblType = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.btnAddToCart = new System.Windows.Forms.Button();
+            this.lblDescription = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblBrand = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.TextBox();
-            this.btnAddToCart = new System.Windows.Forms.Button();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // lblId
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(103, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(690, 658);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(501, 906);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(78, 32);
+            this.lblId.TabIndex = 41;
+            this.lblId.Text = "label1";
+            this.lblId.Visible = false;
             // 
-            // lblName
+            // btnAddToCart
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(1097, 186);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(78, 32);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "label1";
+            this.btnAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(120)))), ((int)(((byte)(191)))));
+            this.btnAddToCart.Font = new System.Drawing.Font("Segoe UI Black", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAddToCart.ForeColor = System.Drawing.Color.White;
+            this.btnAddToCart.Location = new System.Drawing.Point(974, 986);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(230, 70);
+            this.btnAddToCart.TabIndex = 40;
+            this.btnAddToCart.Text = "Add to Cart";
+            this.btnAddToCart.UseVisualStyleBackColor = false;
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click_1);
             // 
-            // lblType
+            // lblDescription
             // 
-            this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(1191, 426);
-            this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(78, 32);
-            this.lblType.TabIndex = 4;
-            this.lblType.Text = "label1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1097, 510);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 32);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Price";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1097, 426);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 32);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Type";
-            // 
-            // lblModel
-            // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(1191, 340);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(78, 32);
-            this.lblModel.TabIndex = 7;
-            this.lblModel.Text = "label1";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1097, 340);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 32);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Model";
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(1191, 510);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(78, 32);
-            this.lblPrice.TabIndex = 9;
-            this.lblPrice.Text = "label1";
+            this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescription.Location = new System.Drawing.Point(1185, 542);
+            this.lblDescription.Multiline = true;
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.ReadOnly = true;
+            this.lblDescription.Size = new System.Drawing.Size(848, 344);
+            this.lblDescription.TabIndex = 39;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1097, 264);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(1185, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 32);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Brand";
+            this.label2.Size = new System.Drawing.Size(108, 40);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Brand:";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Location = new System.Drawing.Point(1191, 264);
+            this.lblBrand.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBrand.Location = new System.Drawing.Point(1299, 248);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(48, 32);
-            this.lblBrand.TabIndex = 11;
+            this.lblBrand.Size = new System.Drawing.Size(57, 37);
+            this.lblBrand.TabIndex = 37;
             this.lblBrand.Text = "dss";
             // 
-            // lblDescription
+            // lblPrice
             // 
-            this.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblDescription.Location = new System.Drawing.Point(1097, 586);
-            this.lblDescription.Multiline = true;
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.ReadOnly = true;
-            this.lblDescription.Size = new System.Drawing.Size(524, 382);
-            this.lblDescription.TabIndex = 13;
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPrice.Location = new System.Drawing.Point(1304, 468);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(86, 37);
+            this.lblPrice.TabIndex = 36;
+            this.lblPrice.Text = "label1";
             // 
-            // btnAddToCart
+            // label7
             // 
-            this.btnAddToCart.Location = new System.Drawing.Point(839, 1074);
-            this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(150, 46);
-            this.btnAddToCart.TabIndex = 14;
-            this.btnAddToCart.Text = "Add to Cart";
-            this.btnAddToCart.UseVisualStyleBackColor = true;
-            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(1185, 316);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 40);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Model:";
+            // 
+            // lblModel
+            // 
+            this.lblModel.AutoSize = true;
+            this.lblModel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblModel.Location = new System.Drawing.Point(1299, 319);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(86, 37);
+            this.lblModel.TabIndex = 34;
+            this.lblModel.Text = "label1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1185, 390);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 40);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Type:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(1185, 465);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 40);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Price:";
+            // 
+            // lblType
+            // 
+            this.lblType.AutoSize = true;
+            this.lblType.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblType.Location = new System.Drawing.Point(1304, 392);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(86, 37);
+            this.lblType.TabIndex = 31;
+            this.lblType.Text = "label1";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Black", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(1185, 116);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(128, 50);
+            this.lblName.TabIndex = 30;
+            this.lblName.Text = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(102, 116);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(816, 770);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
             // 
             // ProductDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1746, 1188);
+            this.ClientSize = new System.Drawing.Size(2136, 1123);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.label2);
@@ -173,6 +199,7 @@ namespace Agile_Project
             this.Controls.Add(this.pictureBox1);
             this.Name = "ProductDetail";
             this.Text = "ProductDetail";
+            this.Load += new System.EventHandler(this.ProductDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,17 +207,19 @@ namespace Agile_Project
         }
 
         #endregion
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label lblName;
-        public System.Windows.Forms.Label lblType;
-        public System.Windows.Forms.Label lblModel;
-        public System.Windows.Forms.Label lblPrice;
-        public System.Windows.Forms.Label lblBrand;
-        public System.Windows.Forms.TextBox lblDescription;
+
+        public System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button btnAddToCart;
+        public System.Windows.Forms.TextBox lblDescription;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblBrand;
+        public System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label lblModel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label lblType;
+        public System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

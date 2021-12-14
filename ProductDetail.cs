@@ -20,47 +20,56 @@ namespace Agile_Project
 
         DataTable mydt = new DataTable();
         SqlConnection con;
-
+        ShoppingCart shop = new ShoppingCart();
+       
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            ShoppingCart shop = new ShoppingCart();
-          /* con = new SqlConnection();
-            //Jorge Calle - Connection
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\DB-Product.mdf;Integrated Security=True";
-            con.Open();
+           
+            /*            con = new SqlConnection();
+                        //Jorge Calle - Connection
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\DB-Product.mdf;Integrated Security=True";
+                        con.Open();
 
-            //Build a command object to hold the SQL statement 
-            SqlCommand mycommand = new SqlCommand();
+                        //Build a command object to hold the SQL statement 
+                        SqlCommand mycommand = new SqlCommand();
 
-            mycommand.Parameters.Add("@Id", SqlDbType.VarChar, 100);
-            mycommand.Parameters["@Id"].Value = lblType;
+                        mycommand.Parameters.Add("@Id", SqlDbType.VarChar, 100);
+                        mycommand.Parameters["@Id"].Value = lblId.Text;
 
-            mycommand.CommandText = "SELECT * FROM Product WHERE Id >=  ";
-
-
-            mycommand.Connection = con;
-
-            //use dataadapter class to carry the command 
-            //to the DBMS and return the results 
-
-            SqlDataAdapter myadpter = new SqlDataAdapter();
-            mydt = new DataTable();
-            myadpter.SelectCommand = mycommand;
+                        mycommand.CommandText = "SELECT * FROM Product WHERE Id=@Id";
 
 
-            //binding]
+                        mycommand.Connection = con;
 
-            shop.dataGridShop.AutoGenerateColumns = false;
-            shop.dataGridShop.DataSource = mydt;
-            myadpter.Fill(mydt);
-*/
+                        //use dataadapter class to carry the command 
+                        //to the DBMS and return the results 
+
+                        SqlDataAdapter myadpter = new SqlDataAdapter();
+                        mydt = new DataTable();
+                        myadpter.SelectCommand = mycommand;
 
 
+                        //binding]
 
+                        shop.dataGridShop.AutoGenerateColumns = false;
+                        shop.dataGridShop.DataSource = mydt;
+                        myadpter.Fill(mydt);*/
+        }
 
+        private void btnAddToCart_Click_1(object sender, EventArgs e)
+        {
             
-            shop.dataGridShop.Rows.Add(lblName.Text, lblPrice.Text);
+            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
+            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
+
+            this.Hide();
             shop.ShowDialog();
+
+        }
+
+        private void ProductDetail_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
