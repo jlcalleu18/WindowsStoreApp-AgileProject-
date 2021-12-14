@@ -22,11 +22,6 @@ namespace Agile_Project
 
         }
 
-        private void Clear_Cart_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -35,6 +30,11 @@ namespace Agile_Project
         private void btn_clearCart_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cart has been Cleared!");
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
