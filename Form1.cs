@@ -94,5 +94,10 @@ namespace Agile_Project
                 MessageBox.Show("Connection Error", "Information");
             }
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

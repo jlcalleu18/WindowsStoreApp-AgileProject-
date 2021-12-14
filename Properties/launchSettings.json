@@ -1,8 +1,12 @@
 {
   "profiles": {
     "Agile-Project": {
+<<<<<<< HEAD
       "commandName": "Project",
       "nativeDebugging": false
+=======
+      "commandName": "Project"
+>>>>>>> register
     }
   }
 }
