@@ -55,12 +55,10 @@ namespace Agile_Project
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtCardNumber = new System.Windows.Forms.TextBox();
             this.txtSecurityCode = new System.Windows.Forms.TextBox();
-            this.txtYear = new System.Windows.Forms.TextBox();
             this.txtMonth = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.picCheckout = new System.Windows.Forms.PictureBox();
@@ -251,11 +249,11 @@ namespace Agile_Project
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(145, 662);
+            this.label8.Location = new System.Drawing.Point(192, 671);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 40);
+            this.label8.Size = new System.Drawing.Size(143, 40);
             this.label8.TabIndex = 45;
-            this.label8.Text = "Postal code:";
+            this.label8.Text = "Zip code:";
             // 
             // label9
             // 
@@ -318,25 +316,17 @@ namespace Agile_Project
             // txtSecurityCode
             // 
             this.txtSecurityCode.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSecurityCode.Location = new System.Drawing.Point(619, 1050);
+            this.txtSecurityCode.Location = new System.Drawing.Point(529, 1050);
             this.txtSecurityCode.Name = "txtSecurityCode";
             this.txtSecurityCode.Size = new System.Drawing.Size(173, 43);
             this.txtSecurityCode.TabIndex = 51;
-            // 
-            // txtYear
-            // 
-            this.txtYear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtYear.Location = new System.Drawing.Point(356, 1050);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(129, 43);
-            this.txtYear.TabIndex = 52;
             // 
             // txtMonth
             // 
             this.txtMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtMonth.Location = new System.Drawing.Point(128, 1050);
             this.txtMonth.Name = "txtMonth";
-            this.txtMonth.Size = new System.Drawing.Size(173, 43);
+            this.txtMonth.Size = new System.Drawing.Size(225, 43);
             this.txtMonth.TabIndex = 53;
             // 
             // label13
@@ -365,25 +355,15 @@ namespace Agile_Project
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(128, 1096);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 32);
+            this.label15.Size = new System.Drawing.Size(114, 32);
             this.label15.TabIndex = 56;
-            this.label15.Text = "Month";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(365, 1096);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(61, 32);
-            this.label17.TabIndex = 58;
-            this.label17.Text = "Year";
+            this.label15.Text = "mm/yyyy";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(619, 1096);
+            this.label16.Location = new System.Drawing.Point(529, 1096);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(160, 32);
             this.label16.TabIndex = 59;
@@ -473,12 +453,10 @@ namespace Agile_Project
             this.Controls.Add(this.picCheckout);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtMonth);
-            this.Controls.Add(this.txtYear);
             this.Controls.Add(this.txtSecurityCode);
             this.Controls.Add(this.txtCardNumber);
             this.Controls.Add(this.lblLastName);
@@ -540,19 +518,17 @@ namespace Agile_Project
         public System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtCardNumber;
         private System.Windows.Forms.TextBox txtSecurityCode;
-        private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.TextBox txtMonth;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.PictureBox picCheckout;
         public System.Windows.Forms.Label lblPriceCheck;
         public System.Windows.Forms.Label lblName;
         public System.Windows.Forms.Label lblTotal;
         public System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.PictureBox picCheckout;
     }
 }
