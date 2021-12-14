@@ -61,6 +61,7 @@ namespace Agile_Project
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(319, 39);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -89,6 +90,7 @@ namespace Agile_Project
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
@@ -113,6 +115,7 @@ namespace Agile_Project
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

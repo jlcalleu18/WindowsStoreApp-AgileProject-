@@ -384,6 +384,7 @@ namespace Agile_Project
             this.picCheckout.Location = new System.Drawing.Point(1340, 205);
             this.picCheckout.Name = "picCheckout";
             this.picCheckout.Size = new System.Drawing.Size(402, 313);
+            this.picCheckout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCheckout.TabIndex = 61;
             this.picCheckout.TabStop = false;
             // 
