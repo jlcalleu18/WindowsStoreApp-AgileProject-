@@ -18,8 +18,12 @@ namespace Agile_Project
         public ProductPage()
         {
             InitializeComponent();
+           
             HomePage home = new HomePage();
+            home.lblID.Text = this.lblEmail.Text;
             addUser(home);
+            
+
 
         }
         public void addUser(UserControl userControl)

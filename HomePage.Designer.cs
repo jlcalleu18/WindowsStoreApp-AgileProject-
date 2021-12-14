@@ -43,6 +43,7 @@ namespace Agile_Project
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,16 +181,27 @@ namespace Agile_Project
             this.Description.ReadOnly = true;
             this.Description.Visible = false;
             // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(50, 18);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(37, 32);
+            this.lblID.TabIndex = 2;
+            this.lblID.Text = "ID";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.dataGridView);
             this.Name = "HomePage";
             this.Size = new System.Drawing.Size(2162, 1194);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -204,5 +216,6 @@ namespace Agile_Project
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        public System.Windows.Forms.Label lblID;
     }
 }

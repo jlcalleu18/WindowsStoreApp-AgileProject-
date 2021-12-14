@@ -58,10 +58,14 @@ namespace Agile_Project
 
         private void btnAddToCart_Click_1(object sender, EventArgs e)
         {
-            
-            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
-            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
+           
+ 
 
+            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
+            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
+            shop.lblFirst.Text = this.lbID.Text;
+
+   
             this.Hide();
             shop.ShowDialog();
 

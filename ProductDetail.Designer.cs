@@ -42,6 +42,7 @@ namespace Agile_Project
             this.lblType = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,11 +180,21 @@ namespace Agile_Project
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.Location = new System.Drawing.Point(2046, 9);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(78, 32);
+            this.lbID.TabIndex = 42;
+            this.lbID.Text = "label1";
+            // 
             // ProductDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2136, 1123);
+            this.Controls.Add(this.lbID);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.lblDescription);
@@ -198,6 +209,7 @@ namespace Agile_Project
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ProductDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductDetail";
             this.Load += new System.EventHandler(this.ProductDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -221,5 +233,6 @@ namespace Agile_Project
         public System.Windows.Forms.Label lblType;
         public System.Windows.Forms.Label lblName;
         public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lbID;
     }
 }

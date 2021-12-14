@@ -57,7 +57,8 @@ namespace Agile_Project
         {
 
             ProductDetail pDetail = new ProductDetail();
-            //DetailPage pDetail = new DetailPage();
+
+            pDetail.lbID.Text = this.lblID.Text;
 
             pDetail.pictureBox1.Image = ConvertByteArrayToImage((byte[])dataGridView.CurrentRow.Cells[0].Value);
             pDetail.lblName.Text = this.dataGridView.CurrentRow.Cells[1].Value.ToString();
@@ -67,9 +68,11 @@ namespace Agile_Project
             pDetail.lblModel.Text = this.dataGridView.CurrentRow.Cells[5].Value.ToString();
             pDetail.lblType.Text = this.dataGridView.CurrentRow.Cells[6].Value.ToString();
             pDetail.lblDescription.Text = this.dataGridView.CurrentRow.Cells[7].Value.ToString();
-      /*      addUser(pDetail);
-            Console.WriteLine("This is C#");*/
+
+
+   
             pDetail.Show();
+           
         }
         private static Image ConvertByteArrayToImage(byte[] byteArrayToConvert)
         {

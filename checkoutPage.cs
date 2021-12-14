@@ -16,6 +16,13 @@ namespace Agile_Project
         public checkoutPage()
         {
             InitializeComponent();
+            ProductPage pro = new ProductPage();
+            this.lblFName.Text = pro.lblFName.Text;
+            this.lblLName.Text = pro.lblLName.Text;
+
+            this.lblFirstName.Text = pro.lblFName.Text;
+            this.lblLastName.Text = pro.lblLName.Text;
+          
         }
         DataTable mydt = new DataTable();
         SqlConnection con;
@@ -24,10 +31,7 @@ namespace Agile_Project
 
         }
 
-        private void load()
-        {
    
-        }
         private void button1_Click(object sender, EventArgs e)
         {
 
