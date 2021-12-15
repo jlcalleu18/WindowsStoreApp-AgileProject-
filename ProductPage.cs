@@ -18,6 +18,9 @@ namespace Agile_Project
         {
             InitializeComponent();
             loadData();
+            //adding items to the comboBox
+            comboBox1.Items.Add("Multi-Rotor");
+            comboBox1.Items.Add("Small Drones");
         }
         DataTable mydt = new DataTable();
         SqlConnection con;
@@ -49,6 +52,8 @@ namespace Agile_Project
             dataGridView.AutoGenerateColumns = false;
             dataGridView.DataSource = mydt;
             myadpter.Fill(mydt);
+
+
 
 
         }
@@ -89,15 +94,45 @@ namespace Agile_Project
 
             return ret;
         }
-        private void addUser(UserControl userControl)
 
+        public void searchData()
         {
-            HomePage pro = new HomePage();
-            pro.panelContainer.Controls.Clear();
-     /*       userControl.Dock = DockStyle.Fill;
-            pro.panelContainer.Controls.Add(userControl);
-            userControl.BringToFront();*/
+            con = new SqlConnection();
+            //Jorge Calle - Connection
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jorgecalle\\source\\repos\\Agile-Project\\DB-Product.mdf;Integrated Security=True";
+            con.Open();
 
+            //Build a command object to hold the SQL statement 
+            SqlCommand mycommand = new SqlCommand();
+
+            mycommand.Parameters.Add("@type", SqlDbType.VarChar, 100);
+            mycommand.Parameters["@type"].Value = comboBox1.Text.ToString();
+
+
+            mycommand.CommandText = "SELECT * FROM Product WHERE Type=@type";
+
+
+            mycommand.Connection = con;
+
+            //use dataadapter class to carry the command 
+            //to the DBMS and return the results 
+
+            SqlDataAdapter myadpter = new SqlDataAdapter();
+            mydt = new DataTable();
+            myadpter.SelectCommand = mycommand;
+
+
+            //binding]
+            dataGridView.AutoGenerateColumns = false;
+            dataGridView.DataSource = mydt;
+            myadpter.Fill(mydt);
+
+
+        }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            searchData();
         }
     }
 

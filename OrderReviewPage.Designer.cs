@@ -330,7 +330,7 @@ namespace Agile_Project
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(1317, 182);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(700, 618);
+            this.panel2.Size = new System.Drawing.Size(744, 618);
             this.panel2.TabIndex = 75;
             // 
             // label12
@@ -399,11 +399,12 @@ namespace Agile_Project
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTotal.Location = new System.Drawing.Point(576, 343);
+            this.lblTotal.Location = new System.Drawing.Point(567, 343);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(109, 50);
             this.lblTotal.TabIndex = 79;
             this.lblTotal.Text = "Total";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel6
             // 
@@ -419,7 +420,7 @@ namespace Agile_Project
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(589, 265);
+            this.label7.Location = new System.Drawing.Point(635, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 45);
             this.label7.TabIndex = 77;
@@ -436,17 +437,19 @@ namespace Agile_Project
             this.lblTax.Size = new System.Drawing.Size(62, 45);
             this.lblTax.TabIndex = 76;
             this.lblTax.Text = "tax";
+            this.lblTax.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
             this.lblSubTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSubTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSubTotal.Location = new System.Drawing.Point(548, 143);
+            this.lblSubTotal.Location = new System.Drawing.Point(583, 145);
             this.lblSubTotal.Name = "lblSubTotal";
             this.lblSubTotal.Size = new System.Drawing.Size(139, 45);
             this.lblSubTotal.TabIndex = 75;
             this.lblSubTotal.Text = "subTotal";
+            this.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
             // 

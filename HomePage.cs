@@ -22,10 +22,9 @@ namespace Agile_Project
             ProductPage home = new ProductPage();
 
             addUser(home);
-            
-
-
+   
         }
+        ProductPage home = new ProductPage();
         public void addUser(UserControl userControl)
            
         {
@@ -34,15 +33,20 @@ namespace Agile_Project
             panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
         }
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
-            ProductPage home = new ProductPage();
+            
             addUser(home);
         }
 
         public void button1_Click(object sender, EventArgs e)
         {
            
-        }  
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
