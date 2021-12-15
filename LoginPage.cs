@@ -20,6 +20,11 @@ namespace Agile_Project
         SqlConnection myconn;
         string id, email, password, firstName, lastName;
 
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
             RegisterPage register = new RegisterPage();
@@ -64,11 +69,11 @@ namespace Agile_Project
                          
                         }
                      //next page   
-                        ProductPage pro = new ProductPage();
-                        HomePage home = new HomePage();
+                        HomePage pro = new HomePage();
+                        ProductPage home = new ProductPage();
                         pro.lblFName.Text = firstName;
                         pro.lblLName.Text = lastName;
-                        pro.lblEmail.Text = id;
+                   
 
                         this.Hide();
                         pro.ShowDialog();

@@ -32,8 +32,6 @@ namespace Agile_Project
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(checkoutPage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLName = new System.Windows.Forms.Label();
-            this.lblFName = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -53,9 +51,6 @@ namespace Agile_Project
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
             this.txtCardNumber = new System.Windows.Forms.TextBox();
             this.txtSecurityCode = new System.Windows.Forms.TextBox();
             this.txtMonth = new System.Windows.Forms.TextBox();
@@ -70,6 +65,9 @@ namespace Agile_Project
             this.lblTotal = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtLastN = new System.Windows.Forms.TextBox();
+            this.txtFName = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,8 +81,6 @@ namespace Agile_Project
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(120)))), ((int)(((byte)(191)))));
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.lblLName);
-            this.panel1.Controls.Add(this.lblFName);
             this.panel1.Controls.Add(this.logo);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -102,28 +98,6 @@ namespace Agile_Project
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
-            // 
-            // lblLName
-            // 
-            this.lblLName.AutoSize = true;
-            this.lblLName.Font = new System.Drawing.Font("Candara", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLName.ForeColor = System.Drawing.Color.White;
-            this.lblLName.Location = new System.Drawing.Point(1877, 34);
-            this.lblLName.Name = "lblLName";
-            this.lblLName.Size = new System.Drawing.Size(126, 45);
-            this.lblLName.TabIndex = 7;
-            this.lblLName.Text = "Fname";
-            // 
-            // lblFName
-            // 
-            this.lblFName.AutoSize = true;
-            this.lblFName.Font = new System.Drawing.Font("Candara", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFName.ForeColor = System.Drawing.Color.White;
-            this.lblFName.Location = new System.Drawing.Point(1760, 34);
-            this.lblFName.Name = "lblFName";
-            this.lblFName.Size = new System.Drawing.Size(126, 45);
-            this.lblFName.TabIndex = 6;
-            this.lblFName.Text = "Fname";
             // 
             // logo
             // 
@@ -314,36 +288,6 @@ namespace Agile_Project
             this.label10.TabIndex = 43;
             this.label10.Text = "Payment Method";
             // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstName.Location = new System.Drawing.Point(356, 228);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(86, 37);
-            this.lblFirstName.TabIndex = 47;
-            this.lblFirstName.Text = "label1";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(356, 371);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(86, 37);
-            this.lblEmail.TabIndex = 48;
-            this.lblEmail.Text = "label1";
-            // 
-            // lblLastName
-            // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLastName.Location = new System.Drawing.Point(356, 296);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(86, 37);
-            this.lblLastName.TabIndex = 49;
-            this.lblLastName.Text = "label1";
-            // 
             // txtCardNumber
             // 
             this.txtCardNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -469,22 +413,49 @@ namespace Agile_Project
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1340, 965);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(621, 84);
             this.button1.TabIndex = 67;
-            this.button1.Text = "Place Order";
+            this.button1.Text = "Review Order";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.Location = new System.Drawing.Point(356, 365);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(424, 43);
+            this.txtEmail.TabIndex = 68;
+            // 
+            // txtLastN
+            // 
+            this.txtLastN.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtLastN.Location = new System.Drawing.Point(356, 293);
+            this.txtLastN.Name = "txtLastN";
+            this.txtLastN.Size = new System.Drawing.Size(270, 43);
+            this.txtLastN.TabIndex = 69;
+            // 
+            // txtFName
+            // 
+            this.txtFName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtFName.Location = new System.Drawing.Point(356, 225);
+            this.txtFName.Name = "txtFName";
+            this.txtFName.Size = new System.Drawing.Size(270, 43);
+            this.txtFName.TabIndex = 70;
             // 
             // checkoutPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2136, 1351);
+            this.Controls.Add(this.txtFName);
+            this.Controls.Add(this.txtLastN);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblTotal);
@@ -499,9 +470,6 @@ namespace Agile_Project
             this.Controls.Add(this.txtMonth);
             this.Controls.Add(this.txtSecurityCode);
             this.Controls.Add(this.txtCardNumber);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -555,9 +523,6 @@ namespace Agile_Project
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.Label lblFirstName;
-        public System.Windows.Forms.Label lblEmail;
-        public System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtCardNumber;
         private System.Windows.Forms.TextBox txtSecurityCode;
         private System.Windows.Forms.TextBox txtMonth;
@@ -573,7 +538,8 @@ namespace Agile_Project
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.PictureBox picCheckout;
         private System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.Label lblLName;
-        public System.Windows.Forms.Label lblFName;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtLastN;
+        private System.Windows.Forms.TextBox txtFName;
     }
 }

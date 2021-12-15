@@ -60,10 +60,8 @@ namespace Agile_Project
         {
            
  
-
             shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
-            shop.dataGridShop.Rows.Add(pictureBox1.Image, lblName.Text, lblPrice.Text);
-            shop.lblFirst.Text = this.lbID.Text;
+         
 
    
             this.Hide();

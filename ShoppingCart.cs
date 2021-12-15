@@ -17,9 +17,8 @@ namespace Agile_Project
         public ShoppingCart()
         {
             InitializeComponent();
-            ProductPage pro = new ProductPage();
-            this.lblFirst.Text = pro.lblFName.Text;
-            this.lblLast.Text = pro.lblLName.Text;
+            HomePage pro = new HomePage();
+
         }
         SqlConnection myconn;
         string id, email, password, firstName, lastName;
@@ -28,6 +27,11 @@ namespace Agile_Project
         {
             dataGridShop.Rows.Clear();
             dataGridShop.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -105,10 +109,10 @@ namespace Agile_Project
 
                         }
                         //next page   
-                        ProductPage pro = new ProductPage();
+                        HomePage pro = new HomePage();
                         pro.lblFName.Text = firstName;
                         pro.lblLName.Text = lastName;
-                        pro.lblEmail.Text = email;
+                    
 
                         this.Hide();
                         pro.ShowDialog();

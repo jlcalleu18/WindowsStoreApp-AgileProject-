@@ -42,8 +42,6 @@ namespace Agile_Project
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLast = new System.Windows.Forms.Label();
-            this.lblFirst = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -159,8 +157,6 @@ namespace Agile_Project
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(120)))), ((int)(((byte)(191)))));
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.lblLast);
-            this.panel1.Controls.Add(this.lblFirst);
             this.panel1.Controls.Add(this.logo);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -178,28 +174,6 @@ namespace Agile_Project
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
-            // 
-            // lblLast
-            // 
-            this.lblLast.AutoSize = true;
-            this.lblLast.Font = new System.Drawing.Font("Candara", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLast.ForeColor = System.Drawing.Color.White;
-            this.lblLast.Location = new System.Drawing.Point(1877, 34);
-            this.lblLast.Name = "lblLast";
-            this.lblLast.Size = new System.Drawing.Size(126, 45);
-            this.lblLast.TabIndex = 7;
-            this.lblLast.Text = "Fname";
-            // 
-            // lblFirst
-            // 
-            this.lblFirst.AutoSize = true;
-            this.lblFirst.Font = new System.Drawing.Font("Candara", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFirst.ForeColor = System.Drawing.Color.White;
-            this.lblFirst.Location = new System.Drawing.Point(1760, 34);
-            this.lblFirst.Name = "lblFirst";
-            this.lblFirst.Size = new System.Drawing.Size(126, 45);
-            this.lblFirst.TabIndex = 6;
-            this.lblFirst.Text = "Fname";
             // 
             // logo
             // 
@@ -263,7 +237,7 @@ namespace Agile_Project
             this.button1.TabIndex = 2;
             this.button1.Text = "Shopping Cart";
             this.button1.UseVisualStyleBackColor = false;
-  
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -366,7 +340,5 @@ namespace Agile_Project
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.Label lblLast;
-        public System.Windows.Forms.Label lblFirst;
     }
 }
