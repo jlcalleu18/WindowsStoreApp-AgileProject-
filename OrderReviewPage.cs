@@ -22,5 +22,7 @@ namespace Agile_Project
             MessageBox.Show("Your purchase was successful");
             this.Hide();
         }
+
+   
     }
 }

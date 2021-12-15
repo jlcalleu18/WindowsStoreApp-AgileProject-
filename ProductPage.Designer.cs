@@ -190,9 +190,9 @@ namespace Agile_Project
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1845, 24);
+            this.comboBox1.Location = new System.Drawing.Point(1791, 24);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(242, 48);
+            this.comboBox1.Size = new System.Drawing.Size(296, 48);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Type of Drones";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);

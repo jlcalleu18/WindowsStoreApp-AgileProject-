@@ -67,6 +67,7 @@ namespace Agile_Project
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -198,7 +199,7 @@ namespace Agile_Project
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCity.Location = new System.Drawing.Point(227, 599);
+            this.lblCity.Location = new System.Drawing.Point(101, 599);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(75, 40);
             this.lblCity.TabIndex = 68;
@@ -208,7 +209,7 @@ namespace Agile_Project
             // 
             this.lblZip.AutoSize = true;
             this.lblZip.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblZip.Location = new System.Drawing.Point(101, 649);
+            this.lblZip.Location = new System.Drawing.Point(244, 649);
             this.lblZip.Name = "lblZip";
             this.lblZip.Size = new System.Drawing.Size(137, 40);
             this.lblZip.TabIndex = 67;
@@ -218,7 +219,7 @@ namespace Agile_Project
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(101, 689);
+            this.lblEmail.Location = new System.Drawing.Point(101, 703);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(96, 40);
             this.lblEmail.TabIndex = 66;
@@ -268,7 +269,7 @@ namespace Agile_Project
             // 
             this.lblSt.AutoSize = true;
             this.lblSt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSt.Location = new System.Drawing.Point(101, 599);
+            this.lblSt.Location = new System.Drawing.Point(263, 599);
             this.lblSt.Name = "lblSt";
             this.lblSt.Size = new System.Drawing.Size(89, 40);
             this.lblSt.TabIndex = 61;
@@ -479,11 +480,22 @@ namespace Agile_Project
             this.panel5.Size = new System.Drawing.Size(916, 10);
             this.panel5.TabIndex = 77;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(101, 649);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(137, 40);
+            this.label13.TabIndex = 78;
+            this.label13.Text = "Zip code:";
+            // 
             // OrderReviewPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2136, 1351);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -560,5 +572,6 @@ namespace Agile_Project
         public System.Windows.Forms.Label lblTotal;
         public System.Windows.Forms.Label lblTax;
         public System.Windows.Forms.Label lblSubTotal;
+        public System.Windows.Forms.Label label13;
     }
 }

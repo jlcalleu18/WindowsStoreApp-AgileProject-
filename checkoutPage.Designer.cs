@@ -189,7 +189,7 @@ namespace Agile_Project
             this.txtState.Location = new System.Drawing.Point(356, 510);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(200, 43);
-            this.txtState.TabIndex = 8;
+            this.txtState.TabIndex = 5;
             // 
             // txtCity
             // 
@@ -197,7 +197,7 @@ namespace Agile_Project
             this.txtCity.Location = new System.Drawing.Point(356, 583);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(200, 43);
-            this.txtCity.TabIndex = 9;
+            this.txtCity.TabIndex = 6;
             // 
             // txtAddress
             // 
@@ -205,7 +205,7 @@ namespace Agile_Project
             this.txtAddress.Location = new System.Drawing.Point(356, 438);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(424, 43);
-            this.txtAddress.TabIndex = 10;
+            this.txtAddress.TabIndex = 4;
             // 
             // label3
             // 
@@ -294,7 +294,7 @@ namespace Agile_Project
             this.txtCardNumber.Location = new System.Drawing.Point(128, 916);
             this.txtCardNumber.Name = "txtCardNumber";
             this.txtCardNumber.Size = new System.Drawing.Size(664, 43);
-            this.txtCardNumber.TabIndex = 50;
+            this.txtCardNumber.TabIndex = 8;
             // 
             // txtSecurityCode
             // 
@@ -302,7 +302,7 @@ namespace Agile_Project
             this.txtSecurityCode.Location = new System.Drawing.Point(529, 1050);
             this.txtSecurityCode.Name = "txtSecurityCode";
             this.txtSecurityCode.Size = new System.Drawing.Size(173, 43);
-            this.txtSecurityCode.TabIndex = 51;
+            this.txtSecurityCode.TabIndex = 10;
             // 
             // txtMonth
             // 
@@ -310,7 +310,7 @@ namespace Agile_Project
             this.txtMonth.Location = new System.Drawing.Point(128, 1050);
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(225, 43);
-            this.txtMonth.TabIndex = 53;
+            this.txtMonth.TabIndex = 9;
             // 
             // label13
             // 
@@ -430,7 +430,7 @@ namespace Agile_Project
             this.txtEmail.Location = new System.Drawing.Point(356, 365);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(424, 43);
-            this.txtEmail.TabIndex = 68;
+            this.txtEmail.TabIndex = 3;
             // 
             // txtLastN
             // 
@@ -438,7 +438,7 @@ namespace Agile_Project
             this.txtLastN.Location = new System.Drawing.Point(356, 293);
             this.txtLastN.Name = "txtLastN";
             this.txtLastN.Size = new System.Drawing.Size(270, 43);
-            this.txtLastN.TabIndex = 69;
+            this.txtLastN.TabIndex = 2;
             // 
             // txtFName
             // 
@@ -446,7 +446,7 @@ namespace Agile_Project
             this.txtFName.Location = new System.Drawing.Point(356, 225);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(270, 43);
-            this.txtFName.TabIndex = 70;
+            this.txtFName.TabIndex = 1;
             // 
             // checkoutPage
             // 
@@ -485,7 +485,7 @@ namespace Agile_Project
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "checkoutPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "checkoutPage";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

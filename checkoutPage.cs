@@ -32,7 +32,7 @@ namespace Agile_Project
 
 
             System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
-            System.Text.RegularExpressions.Regex rDate = new System.Text.RegularExpressions.Regex(@"^(0[1-9]|10|11|12)/20[0-9]{2}$");
+            System.Text.RegularExpressions.Regex rDate = new System.Text.RegularExpressions.Regex(@"^(0[1-9]|10|11|12)/202[2-9]{1}$");
             System.Text.RegularExpressions.Regex rCard = new System.Text.RegularExpressions.Regex(@"^4[0-9]{12}(?:[0-9]{3})?$");
             System.Text.RegularExpressions.Regex rZip = new System.Text.RegularExpressions.Regex(@"^[0-9]{5}(?:-[0-9]{4})?$");
             

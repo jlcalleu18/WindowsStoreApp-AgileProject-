@@ -209,18 +209,16 @@ namespace Agile_Project
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button3.Font = new System.Drawing.Font("Cambria Math", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(1847, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(289, 97);
-            this.button3.TabIndex = 3;
+            this.button3.TabIndex = 35;
             this.button3.Text = "Checkout";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);

@@ -21,6 +21,9 @@ namespace Agile_Project
             //adding items to the comboBox
             comboBox1.Items.Add("Multi-Rotor");
             comboBox1.Items.Add("Small Drones");
+            comboBox1.Items.Add("GPS Drones");
+            comboBox1.Items.Add("Photography Drones");
+            comboBox1.Items.Add("Weatherproof Drone");
         }
         DataTable mydt = new DataTable();
         SqlConnection con;
